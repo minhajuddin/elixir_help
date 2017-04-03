@@ -3,7 +3,7 @@ defmodule ElixirHelp.Mixfile do
 
   @description  "IEx `h` from your cli"
   def project do
-    [app: :h,
+    [app: :elixir_help,
      version: "0.1.0",
      elixir: "~> 1.4",
      package: package(),
@@ -19,7 +19,7 @@ defmodule ElixirHelp.Mixfile do
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
     [extra_applications: [:logger],
-     mod: {H.Application, []}]
+     mod: {ElixirHelp.Application, []}]
   end
 
   # Dependencies can be Hex packages:
