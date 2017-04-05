@@ -12,8 +12,8 @@ end
 
 defmodule ElixirHelp.Server do
   def start do
-    assert_mix!
-    :os.cmd(~s[nohup /bin/bash -c "elixir #{Path.expand("../run.exs", __FILE__)}"])
+    assert_mix!()
+    :os.cmd(~s[nohup /bin/bash -c "elixir #{Path.expand("../run.exs", __DIR__)}" &] |> to_charlist)
   end
 
   defp assert_mix! do
