@@ -34,7 +34,6 @@ defmodule ElixirHelp.Mixfile do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:alchemist_server, github: "tonini/alchemist-server"}
     ]
   end
 
